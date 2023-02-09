@@ -1,0 +1,130 @@
+/* changind browsers default styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.container{
+  display: flex;
+
+
+}
+
+
+
+/* style the content section */
+
+.content{
+  width: 55%;
+  min-height: 100vh;
+  
+}
+
+canvas{
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+/* Form styles */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  /* max-width: 400px; */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form > div > input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #e5b8f4;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  padding: 0 30px;
+}
+
+form div {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+input:focus {
+  border: 2px solid #810ca8;
+}
+
+/* form icon styles */
+
+form div .fa-solid {
+  position: absolute;
+  padding: 10px;
+}
+
+.failure-icon,
+.success-icon {
+  right: 0;
+  opacity: 0;
+}
+
+.failure-icon,
+.error {
+  color: #E5B8F4;
+}
+
+.success-icon {
+  color: #d9acf5;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/* style the button */
+
+button {
+  width: 50%;
+  height: 45px;
+  background-color: #e5b8f4;
+  margin-left: 150px;
+  margin-top: 40px;
+}
+
+.button-pulse {
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 1000px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
+  transition: 0.5s all ease-in-out;
+  box-shadow: 0 0 0 0 #e5b8f4;
+}
+
+.button-pulse:hover {
+  cursor: pointer;
+  background: white;
+  color: #1f4141;
+  animation: none;
+}
+
+/* media queries */
