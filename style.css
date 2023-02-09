@@ -9,7 +9,11 @@
 body {
   font-family: sans-serif;
   overflow: hidden;
+  background-color: black;
+  
 }
+
+
 
 .container{
   display: flex;
@@ -20,7 +24,7 @@ body {
 
 
 /* style the content section */
-
+/* 
 .content{
   width: 55%;
   min-height: 100vh;
@@ -31,7 +35,7 @@ canvas{
   background-color: black;
   width: 100%;
   min-height: 100vh;
-}
+} */
 
 
 /* Form styles */
@@ -44,13 +48,12 @@ form {
   /* max-width: 400px; */
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 50px;
+  margin: 0 auto;
+  
+  
 }
 
-.title {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
+
 
 form > div > input {
   width: 100%;
@@ -60,6 +63,7 @@ form > div > input {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   outline: none;
   padding: 0 30px;
+  
 }
 
 form div {

@@ -11,39 +11,42 @@
     <title>Form Validation</title>
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <canvas id="canvas"></canvas>
+    <canvas id="canvas"> </canvas>
+        <div class="container">
+            <div class="content">
+                
+            </div>
+            <form id="form">
+                
+                <!-- username input -->
+                <div>
+                    <label for="username"><i class="fa-solid fa-skull"></i></label>
+                    <input type="text" name="username" id="username" placeholder="User Name">
+                    <i class="fa-solid fa-xmark failure-icon"></i>
+                    <i class="fa-solid fa-check-double success-icon"></i>
+                    <div class="error"></div>
+                </div>
+                <!-- Email input -->
+                <div>
+                    <label for="email"><i class="fa-solid fa-square-envelope"></i></i></label>
+                    <input type="email" name="email" id="email" placeholder="@email">
+                    <i class="fa-solid fa-xmark failure-icon"></i>
+                    <i class="fa-solid fa-check-double success-icon"></i>
+                    <div class="error"></div>
+                </div>
+                <!-- password input -->
+                <div>
+                    <label for="password"><i class="fa-solid fa-lock"></i></i></label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <i class="fa-solid fa-xmark failure-icon"></i>
+                    <i class="fa-solid fa-check-double success-icon"></i>
+                    <div class="error"></div>
+                </div>
+                <button class="button-pulse" type="submit" id="submit"><i class="fa-solid fa-skull-crossbones"></i></button>
+            </form>
         </div>
-        <form id="form">
-            <div class="title">Register For Whatever</div>
-            <!-- username input -->
-            <div>
-                <label for="username"><i class="fa-solid fa-skull"></i></label>
-                <input type="text" name="username" id="username" placeholder="User Name">
-                <i class="fa-solid fa-xmark failure-icon"></i>
-                <i class="fa-solid fa-check-double success-icon"></i>
-                <div class="error"></div>
-            </div>
-            <!-- Email input -->
-            <div>
-                <label for="email"><i class="fa-solid fa-square-envelope"></i></i></label>
-                <input type="email" name="email" id="email" placeholder="@email">
-                <i class="fa-solid fa-xmark failure-icon"></i>
-                <i class="fa-solid fa-check-double success-icon"></i>
-                <div class="error"></div>
-            </div>
-            <!-- password input -->
-            <div>
-                <label for="password"><i class="fa-solid fa-lock"></i></i></label>
-                <input type="password" name="password" id="password" placeholder="Password">
-                <i class="fa-solid fa-xmark failure-icon"></i>
-                <i class="fa-solid fa-check-double success-icon"></i>
-                <div class="error"></div>
-            </div>
-            <button class="button-pulse" type="submit" id="submit"><i class="fa-solid fa-skull-crossbones"></i></button>
-        </form>
-    </div>
+   
+   
 
 
 
